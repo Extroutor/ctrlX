@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
+
+.App {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img/background.png');
+    background-repeat: no-repeat;
+}
+
+.header__wrapper {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo__title {
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.logo__image {
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+
+.content_text {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.content__wrapper {
+    padding-top: 100px;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0;
+    animation: ani 1.5s forwards;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.content_title {
+    background: #FFF3D6;
+    background: -webkit-linear-gradient(0deg, #fff3d6, #c172ff 92.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.button_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.button_wrap button {
+    background: -webkit-linear-gradient(0deg, #fff3d6, #c172ff 92.75%);
+    border: 0;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: 400;
+    box-shadow: 0 0 10px rgb(185, 185, 185);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.button_wrap button:hover {
+    background: -webkit-linear-gradient(0deg, #fff3d6, #c172ff 92.75%);
+    box-shadow: none;
+}
+
+.select_wrap {
+    margin-top: 150px;
+}
+
+.select {
+    width: 80%;
+    padding: 8px 10px;
+    background-color: transparent;
+    color: #dedede;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.select_option {
+    padding: 8px 60px;
+    background-color: rgb(57, 71, 97);
+    color: #ffffff;
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 80%;
+}
